@@ -1,0 +1,54 @@
+html {
+    border: 0px;
+    margin: 0px;
+}
+body {
+    width: 1920px;
+    border: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+header.cabecalho {
+    
+}
+
+header .fundo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+header .menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.menu img {
+    width: 100%;
+} 
+
+header .nuvens {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+main.corpo {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid red;
+}
+
+main.corpo section.bloco {
+    position: absolute;
+    top: 0px;
+    border: 2px solid blue;
+    width: 100%;
+}
+
+main.corpo section.bloco div.bloco-bloco {
+    text-align: center;
+    border: 1px solid orange;
+}
