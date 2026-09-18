@@ -1,54 +1,75 @@
-html {
-    border: 0px;
+* {
     margin: 0px;
-}
-body {
-    width: 1920px;
-    border: 0px;
-    margin: 0px;
-    background-color: #ffffff;
-}
-header.cabecalho {
-    
+    padding: 0px;
 }
 
-header .fundo {
+header {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    top: 0px;
-    left: 0px;
+    max-height: 700px;
+    min-height: 700px;
 }
 
-header .menu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-div.menu img {
-    width: 100%;
-} 
-
-header .nuvens {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-main.corpo {
+header img {
     position: relative;
     width: 100%;
-    background-color: #ffffff;
-    border: 2px solid red;
 }
 
-main.corpo section.bloco {
-    position: absolute;
-    top: 0px;
-    border: 2px solid blue;
-    width: 100%;
+nav {
+    background-color: pink;
+    height: 70px;
 }
 
-main.corpo section.bloco div.bloco-bloco {
-    text-align: center;
-    border: 1px solid orange;
+main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -100px;
 }
+
+main section {
+    max-width: 1300px;
+    min-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: pink;
+}
+
+main > section > article {
+    display: flex;
+}
+
+article > div {
+    margin: 10px 0;
+}
+
+.leftContent {
+    padding-right: 10px;
+}
+
+
+.rightContent {
+    padding-left: 10px;
+}
+
+article > div > p {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.angeling-footer {
+    max-width: 1300px;   
+}
+
+.angeling-footer img {
+    width: 100%
+}   
