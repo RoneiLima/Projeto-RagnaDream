@@ -43,6 +43,14 @@ main section {
     background-color: pink;
 }
 
+main section img.poring-bandeira-esquerda {
+    position: absolute;
+}
+
+main section img.poring-bandeira-direita {
+    position: absolute;
+}
+
 main > section > article {
     display: flex;
 }
