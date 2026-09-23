@@ -37,6 +37,7 @@ header img.logo {
 
 nav {
     background-image: linear-gradient(to bottom, #e46070, #983844);
+    
     height: var(--altura-nav);
     border: 5px solid #443838;
 }
