@@ -14,7 +14,12 @@ header {
 }
 
 header img {
-    position: relative;
+    position: absolute;
+    width: 100%;
+}
+
+header img.logo {
+    z-index: 5;
     width: 100%;
 }
 
