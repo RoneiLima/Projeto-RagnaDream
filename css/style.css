@@ -71,19 +71,19 @@ header a img {
 }
 
 main {
-    display: flex;
     justify-content: center;
     position: relative;
     margin-top: -100px;
 }
 
-main section.conteudo {
+main section.apresentacao {
     position: relative;
     max-width: 1300px;
     min-width: 300px;
     border-radius: 10px;
     padding: 20px;
     background-color: white;
+    margin: auto;
 }
 
 main section img.poring-bandeira-esquerda {
@@ -120,6 +120,7 @@ article > div > p {
     background-color: white;
     border-radius: 10px;
 }
+
 
 footer {
     display: flex;
