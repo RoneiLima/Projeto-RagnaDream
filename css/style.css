@@ -121,6 +121,15 @@ article > div > p {
     border-radius: 10px;
 }
 
+main section.cardsBackground {
+    background-image: url('../img/cardsBackground.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2200px;
+    text-align: center;
+}
+
 
 footer {
     display: flex;
