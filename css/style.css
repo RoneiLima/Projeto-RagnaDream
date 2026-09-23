@@ -1,3 +1,8 @@
+:root {
+    --altura-nav: 70px;
+    --altura-header: 700px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,23 +14,30 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
-    max-height: 700px;
-    min-height: 700px;
+    height: var(--altura-header);
 }
 
 header img {
     position: absolute;
-    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    bottom: 0px;
 }
 
 header img.logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
     z-index: 5;
     width: 100%;
 }
 
 nav {
     background-color: pink;
-    height: 70px;
+    height: var(--altura-nav);
 }
 
 main {
@@ -35,20 +47,25 @@ main {
     margin-top: -100px;
 }
 
-main section {
+main section.conteudo {
+    position: relative;
     max-width: 1300px;
     min-width: 300px;
     border-radius: 10px;
     padding: 20px;
-    background-color: pink;
+    background-color: white;
 }
 
 main section img.poring-bandeira-esquerda {
     position: absolute;
+    top: -50px;
+    left: -80px;
 }
 
 main section img.poring-bandeira-direita {
     position: absolute;
+    top: -50px;
+    right: -75px;
 }
 
 main > section > article {
