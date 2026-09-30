@@ -1,0 +1,15 @@
+section h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: pink;
+    font-size: 3em;
+}
+
+.conteudo-download {
+    display: flex;
+}
+
+.conteudo-download div {
+    width: 50%;
+}
