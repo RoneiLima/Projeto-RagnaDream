@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
+section > h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: pink;
+}
+
 .tabela {
-    position: relative;
+    overflow-x: auto;
 }
 
 table {
