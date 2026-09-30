@@ -1,10 +1,39 @@
 @charset "UTF-8";
 
+nav.ranking-menu {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+nav.ranking-menu a {
+    background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
+    height: var(--altura-nav);
+    display: inline-block;
+    line-height: 70px;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+nav.ranking-menu a:hover {
+    background-color: #e46070;
+    background-image: none;
+    color: #303030;
+}
+
 section > h1 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: pink;
+    margin-bottom: 30px;
 }
 
 .tabela {

@@ -35,7 +35,7 @@ header picture img.logo {
     width: 100%;
 }
 
-nav {
+nav.menu {
     background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
     height: var(--altura-nav);
     border-bottom: 5px solid #443838;
@@ -43,11 +43,11 @@ nav {
     justify-content: space-between;
 }
 
-nav div {
+nav.menu div {
     display: inline-block;
 }
 
-nav a {
+nav.menu a {
     line-height: 70px;
     text-decoration: none;
     font-family: 'Helvetica';
@@ -57,7 +57,7 @@ nav a {
     padding: 30px 35px;
 }
 
-nav a:hover {
+nav.menu a:hover {
     background-color: white;
     color: #e46070;
 }
