@@ -71,7 +71,6 @@ header a img {
 }
 
 main {
-    justify-content: center;
     position: relative;
     margin-top: -100px;
 }
@@ -98,51 +97,9 @@ main section img.poring-bandeira-direita {
     right: -75px;
 }
 
-main > section > article {
-    display: flex;
-}
-
-article > div {
-    margin: 10px 0;
-}
-
-.leftContent {
-    padding-right: 10px;
-    width: 50%;
-    font-size: 1.2em;
-    font-family: 'Helvetica';
-    font-weight: bold;
-}
-
-
-.rightContent {
-    padding-left: 10px;
-    width: 50%
-}
-
-article > div > p {
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-main section.cardsBackground {
-    background-image: url('../img/cardsBackground.png');
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 2200px;
-    text-align: center;
-}
-
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
 .angeling-footer {
-    max-width: 1300px;   
+    max-width: 1300px;
+    margin: auto;  
 }
 
 .angeling-footer img {

@@ -1,0 +1,43 @@
+main > section > article {
+    display: flex;
+}
+
+article > div {
+    margin: 10px 0;
+}
+
+.leftContent {
+    padding-right: 10px;
+    width: 70%;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.rightContent {
+    padding-left: 10px;
+    width: 30%
+}
+
+.rightContent img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid pink;
+}
+
+article > div > p {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main section.cardsBackground {
+    background-image: url('../img/cardsBackground.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2200px;
+    text-align: center;
+}
