@@ -28,7 +28,7 @@ nav.ranking-menu a:hover {
     color: #303030;
 }
 
-section > h1 {
+article > h1 {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
