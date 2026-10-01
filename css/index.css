@@ -32,6 +32,7 @@ article > div {
     margin: auto;
     border-radius: 10px;
     border: 10px solid #e46070;
+    pointer-events: none;
 }
 
 article > div > p {

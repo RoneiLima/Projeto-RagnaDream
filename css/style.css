@@ -24,6 +24,7 @@ header picture img {
     left: 50%;
     width: 80%;
     bottom: 0px;
+    pointer-events: none;
 }
 
 header picture img.logo {
@@ -33,6 +34,7 @@ header picture img.logo {
     left: 50%;
     z-index: 5;
     width: 100%;
+    pointer-events: none;
 }
 
 nav.menu {
@@ -85,6 +87,10 @@ main section.apresentacao {
     margin: auto;
 }
 
+.poring-bandeira-esquerda, .poring-bandeira-direita {
+    pointer-events: none;
+}
+
 main section img.poring-bandeira-esquerda {
     position: absolute;
     top: -50px;
@@ -103,5 +109,6 @@ main section img.poring-bandeira-direita {
 }
 
 .angeling-footer img {
-    width: 100%
-}   
+    width: 100%;
+    pointer-events: none;
+}       
