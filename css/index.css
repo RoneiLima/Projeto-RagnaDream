@@ -1,0 +1,25 @@
+
+.welcomeImage {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    #bemVindos {
+        display: flex;
+    }
+    .welcomeText {
+        width: 60%;
+    }
+    .welcomeImage {
+        display: block;
+         width: 40%;
+    }
+    .welcomeImage img {
+        display: block;
+        margin: 25px auto;
+        border-radius: 10px;
+        border: 10px solid pink;
+    }
+
+}

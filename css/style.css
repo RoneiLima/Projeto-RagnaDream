@@ -6,6 +6,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin: 15px 0px;
+}
+
+p {
+    margin: 35px 0px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
 /* CONFIGURAÇÃO DO MENU DROPDOWN (BURGER MENU) MOBILE */
 
 .downloadPageButton {
@@ -110,22 +120,6 @@ main {
     padding: 20px;
 }
 
-/* CONFIGURAÇÃO DA SEÇÃO DE BOAS VINDAS */
-
-.container .welcomeText h1 {
-    margin: 15px 0px;
-}
-
-.container .welcomeText p {
-    margin: 15px 0px;
-    font-weight: bold;
-    text-align: justify;
-}
-
-.container .welcomeImage {
-    display: none;
-}
-
 /* CONFIGURAÇÃO DO RODAPÉ */
 
 .angeling-footer {
@@ -195,6 +189,7 @@ main {
     header {
         height: 550px;
     }
+
     header img.logo {
         left: 40%;
         z-index: 10;
@@ -213,9 +208,20 @@ main {
     }
     .desktopMenuCharacter { display: none; }
     .ultraWideMenuCharacter { display: none; }
+
 }
 
 @media screen and (min-width: 1200px) { /* Monitores grandes */
+
+    .downloadPageButton {
+        display: block;
+        position: absolute;
+        z-index: 20;
+        transform: translate(-50%, -50%);
+        top: 25px;
+        left: 50%;
+        width: 20%;
+    }
     
     span#menuBurger {
         display: none;
@@ -225,6 +231,7 @@ main {
         display: flex !important;
         justify-content: space-between;
         background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
+        height: 75px;
     }
     
     header > nav > ul {
@@ -233,6 +240,8 @@ main {
     header > nav > ul > li {
         display: inline-block;
         background-image: none;
+        line-height: 45px;
+        font-size: 1.2em;
     }
 
     header {
@@ -293,6 +302,10 @@ main {
         top: 60%;
         left: 48%;
     }
+    header > nav > ul > li {
+        font-size: 1.3em;
+    }
+
     .mobileMenuCharacter { display: none; }
     .landscapeSmartphoneMenuCharacter { display: none; }
     .tabletMenuCharacter { display: none; }
@@ -300,5 +313,18 @@ main {
     .desktopMenuCharacter { display: none; }
     .ultraWideMenuCharacter { 
         display: block; 
+    }
+}
+
+@media screen and (min-width: 1600px) { 
+    header > nav > ul > li {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 1750px) { 
+    header > nav > ul > li {
+        padding: 0px 20px;
+        font-size: 1.4em;
     }
 }
