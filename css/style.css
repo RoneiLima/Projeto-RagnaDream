@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURAÇÃO DO MENU DROPDOWN (BURGER MENU) MOBILE */
+
+.downloadPageButton {
+    display: none;
+}
+
+#menuBurger {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
+    cursor: pointer;
+}
+
+#menuBurger:hover {
+    background-color: pink;
+    background-image: none;
+}
+
+header > nav#menu {
+    display: none;
+    z-index: 10;
+    position: relative;
+}
+
+header > nav > ul {
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
+}
+
+header > nav > ul > li:hover {
+    background-image: none;
+    background-color: pink;
+}
+
+header > nav > ul > li > a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+/* CONFIGURAÇÃO DO CABEÇALHO */
+
+header {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 70vh;
+}
+
+header img.logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 40%;
+    width: 60vw;
+}
+
+header div.characters {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    right: -50px;
+}
+
+header img.mobileMenuCharacter {
+    width: 30vw;
+}
+
+.mobileMenuCharacter { display: block; }
+.landscapeSmartphoneMenuCharacter { display: none; }
+.tabletMenuCharacter { display: none; }
+.laptopMenuCharacter { display: none; }
+.desktopMenuCharacter { display: none; }
+.ultraWideMenuCharacter { display: none; }
+
+/* CONFIGURAÇÃO DO CONTEÚDO */
+
+.poringsFlag {
+    display: none;
+    pointer-events: none;
+}
+
+main {
+    position: relative;
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    margin-top: -100px;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* CONFIGURAÇÃO DA SEÇÃO DE BOAS VINDAS */
+
+.container .welcomeText h1 {
+    margin: 15px 0px;
+}
+
+.container .welcomeText p {
+    margin: 15px 0px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.container .welcomeImage {
+    display: none;
+}
+
+/* CONFIGURAÇÃO DO RODAPÉ */
+
+.angeling-footer {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.angeling-footer img {
+    width: 100%;
+    pointer-events: none;
+}
+
+/* TYPICAL DEVICE BREAKPOINTS 
+
+• 576px – Celulares grandes (em modo paisagem)
+• 768px – Tablets (como iPads)
+• 992px – Laptops e desktops comuns
+• 1200px – Monitores grandes
+
+*/
+
+@media screen and (min-width: 576px) { /* Celulares Grandes (modo paisagem) */
+    header {
+        height: 450px;
+    }
+    header img.logo {
+        top: 50%;
+    }
+    header div.characters {
+        top: 50%;
+        left: 80%;
+    }
+    .mobileMenuCharacter { display: none; }
+    .landscapeSmartphoneMenuCharacter { 
+        display: block;
+        width: 150px;
+    }
+    .tabletMenuCharacter { display: none; }
+    .laptopMenuCharacter { display: none; }
+    .desktopMenuCharacter { display: none; }
+    .ultraWideMenuCharacter { display: none; }
+}
+
+@media screen and (min-width: 768px) { /* Tablets */
+    header {
+        height: 500px;
+    }
+    header img.logo {
+        left: 58%;
+    }
+    header div.characters {
+        left: 42%;
+    }
+    .mobileMenuCharacter { display: none; }
+    .landscapeSmartphoneMenuCharacter { display: none; }
+    .tabletMenuCharacter { 
+        display: block;
+        width: 180px;
+    }
+    .laptopMenuCharacter { display: none; }
+    .desktopMenuCharacter { display: none; }
+    .ultraWideMenuCharacter { display: none; }
+
+}
+
+@media screen and (min-width: 992px) { /* Laptops e desktops comuns */
+    header {
+        height: 550px;
+    }
+    header img.logo {
+        left: 40%;
+        z-index: 10;
+        width: 50vw;
+    }
+    header div.characters {
+        top: 55%;
+        left: 75%;
+    }
+    .mobileMenuCharacter { display: none; }
+    .landscapeSmartphoneMenuCharacter { display: none; }
+    .tabletMenuCharacter { display: none; }
+    .laptopMenuCharacter { 
+        display: block;
+        width: 320px; 
+    }
+    .desktopMenuCharacter { display: none; }
+    .ultraWideMenuCharacter { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* Monitores grandes */
+    
+    span#menuBurger {
+        display: none;
+    }
+
+    header > nav#menu {
+        display: flex !important;
+        justify-content: space-between;
+        background-image: linear-gradient(to bottom, #e46070, #e05162, #983844);
+    }
+    
+    header > nav > ul {
+        display: inline-block;
+    }
+    header > nav > ul > li {
+        display: inline-block;
+        background-image: none;
+    }
+
+    header {
+        height: 600px;
+    }
+    header img.logo {
+        width: 45%;
+        left: 50%;
+    }
+    header div.characters {
+        left: 37%;
+    }
+
+    .mobileMenuCharacter { display: none; }
+    .landscapeSmartphoneMenuCharacter { display: none; }
+    .tabletMenuCharacter { display: none; }
+    .laptopMenuCharacter { display: none; }
+    .desktopMenuCharacter { 
+        display: block;
+        width: 90vw; 
+    }
+    .ultraWideMenuCharacter { display: none; }
+
+    /* CONFIGURAÇÃO PORINGS ORNAMENTO TELAS 1200PX + */
+
+    .poringsFlag {
+        display: block;
+        position: absolute;
+    }
+    
+    #leftPoringFlag {
+        top: -50px;
+        left: -80px;
+    }
+
+    #rightPoringFlag {
+        top: -50px;
+        right: -75px;
+    }
+
+    /* CONFIGURAÇÃO DO CONTÉUDO */
+
+    main {
+        max-width: 1200px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) { /* Monitores ultrawide e TV's */
+    header {
+        height: 700px;
+    }
+    header img.logo {
+        width: 40vw;
+        left: 60%;
+    }
+    header div.characters {
+        top: 60%;
+        left: 48%;
+    }
+    .mobileMenuCharacter { display: none; }
+    .landscapeSmartphoneMenuCharacter { display: none; }
+    .tabletMenuCharacter { display: none; }
+    .laptopMenuCharacter { display: none; }
+    .desktopMenuCharacter { display: none; }
+    .ultraWideMenuCharacter { 
+        display: block; 
+    }
+}
