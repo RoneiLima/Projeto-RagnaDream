@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RagnaDream!</title>
-    <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- ICON MENU BURGER -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
      <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <!-- SWIPER -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body onresize="changeMenu()">
     <header>
@@ -20,7 +20,7 @@
         <nav id="menu">
             <ul>
                 <li><a href="">INICIO</a></li>
-                <li><a href="">INFORMAÇÕES</a></li>
+                <li><a href="info.html">INFORMAÇÕES</a></li>
                 <li><a href="">DATABASE</a></li>
                 <li><a href="">WIKI</a></li>
             </ul>
@@ -52,11 +52,44 @@
                     <p>É um prazer ter você aqui! Nosso objetivo é criar uma experiência divertida, nostálgica e cheia de aventuras para todos que amam Ragnarok Online.</p>
                     <p>Estamos trabalhando com muita dedicação para construir um projeto pensado nos jogadores, cuidando de cada detalhe para tornar essa jornada cada vez mais divertida. Aqui, você poderá enfrentar monstros, conquistar equipamentos, fazer amizades e criar sua própria história.</p>
                     <p>Nossa aventura está apenas começando, e queremos você ao nosso lado nessa jornada.</p>
-                    <p>Bem-vindo ao RagnaDream. Sua aventura começa aqui!</p>
+                    <p>Sua aventura começa aqui!</p>
                 </div>
                 <div class="welcomeImage">
                     <img src="img/adm.png" alt="Imagem de boas vindas">
                 </div>
+            </div>
+            <!-- 2. Estrutura HTML do Swiper -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <h1>ÚLTIMAS NOTÍCIAS</h1>
+            <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="img/banner.png">
+                            <img src="img/mobile-carousel.png" alt="Banner carrosel">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="Banner carrosel">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="Banner carrosel">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="Banner carrosel">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="Banner carrosel">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner.png" alt="Banner carrosel">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
     </main>
@@ -67,5 +100,7 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>

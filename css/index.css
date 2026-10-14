@@ -3,6 +3,41 @@
     display: none;
 }
 
+.swiper {
+  width: 100%;
+  padding: 20px 0 40px;
+  overflow: hidden;
+}
+
+.swiper h1 {
+    text-align: center;
+}
+
+.swiper-wrapper .swiper-slide {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: 10px solid white;
+}
+
+.swiper-slide  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: inherit;
+    user-select: none;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-slide {
+        max-width: 90vw;
+    }
+}
+
 @media screen and (min-width: 992px) {
 
     #bemVindos {
@@ -22,4 +57,17 @@
         border: 10px solid pink;
     }
 
+    .swiper-wrapper .swiper-slide {
+        max-width: 90vw;
+        height: 511px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .swiper-wrapper .swiper-slide {
+        width: 900px;
+        height: 511px;
+    }
 }
