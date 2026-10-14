@@ -58,10 +58,6 @@
         border: 10px solid pink;
     }
 
-    .swiper-wrapper .swiper-slide {
-        max-width: 90vw;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
