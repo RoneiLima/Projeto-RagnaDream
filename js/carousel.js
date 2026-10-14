@@ -16,13 +16,13 @@ const swiper = new Swiper(".swiper", {
     },
     breakpoints: {
         0: {                       // celular
-            coverflowEffect: { rotate: 25, depth: 0, slideShadows: false },
+            coverflowEffect: { rotate: 25, depth: 0 },
         },
         768: {                     // tablet
-            coverflowEffect: { rotate: 40, depth: 0, slideShadows: false },
+            coverflowEffect: { rotate: 40, depth: 0 },
         },
         992: {                    // desktop
-            coverflowEffect: { rotate: 50, depth: 0, slideShadows: false },
+            coverflowEffect: { rotate: 50, depth: 0, slideShadows: true},
         },
         1200: {
             coverflowEffect: { rotate: 50, depth: 100, slideShadows: true }
