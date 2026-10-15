@@ -3,6 +3,8 @@
     display: none;
 }
 
+/* CARROSEL COM SWIPER JS */
+
 .swiper {
   width: 100%;
   padding: 20px 0 0;
@@ -32,6 +34,12 @@
     position: static;
     margin-top: 20px;
 }
+
+/* BOTÕES DE NOTÍCIAS */
+
+
+
+/* MEDIA QUERIES INDEX */
 
 @media screen and (min-width: 768px) {
     .swiper-wrapper .swiper-slide {
